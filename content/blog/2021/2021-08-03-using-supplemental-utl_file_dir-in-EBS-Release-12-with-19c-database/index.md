@@ -33,9 +33,6 @@ Hence, to tackle this limitation in E-Business Suite product, Oracle introduced 
 *utl_file_dir* parameter. Oracle introduced new views *apps.v$parameter* and 
 *apps.v$parameter2*, which provide and store this new supplemental *utl_file_dir* feature. 
 
-In this blog, we will review how to use this new supplemental *utl_file_dir* feature in 
-EBS R12 with a 19c database.
-
 Before database release 12c and earlier, initialization parameter *utl_file_parameter* was 
 used to deal with PL/Sql related File I/O. To add a new path to have PL/Sql enabled File I/O, 
 it was essential to add the OS path in the *utl_file_dir* parameter list and bounce the database. 
