@@ -20,6 +20,11 @@ slug: "using-supplemental-utl_file_dir-in-EBS-Release-12-with-19c-database"
 
 ---
 
+In this blog, we will review how to use this new supplemental *utl_file_dir* feature in 
+EBS R12 with a 19c database.
+
+<!--more-->
+
 The Oracle E-Business suite uses OS level directories for *PL/Sql File I/O* for many different 
 tasks such as generating temporary files, debugging files, log and output files etc. This 
 *PL/Sql File I/O* is generally done using *utl_file* or *fnd_file* packages. However, starting 
@@ -30,10 +35,6 @@ Hence, to tackle this limitation in E-Business Suite product, Oracle introduced 
 
 In this blog, we will review how to use this new supplemental *utl_file_dir* feature in 
 EBS R12 with a 19c database.
-
-
-
-<!--more-->
 
 Before database release 12c and earlier, initialization parameter *utl_file_parameter* was 
 used to deal with PL/Sql related File I/O. To add a new path to have PL/Sql enabled File I/O, 
